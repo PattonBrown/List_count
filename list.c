@@ -52,6 +52,15 @@ void mergeNodes(PNode head){
     }
 }
 
+void traverseList(PNode head) {
+    PNode current = head;
+    while (current != NULL) {
+        printf("%s, %d\n", current->data.name, current->data.totalCount);
+        current = current->next;
+    }
+}
+
+
 void destoryList(PNode* head){
     PNode current=*head;
     while(current!=NULL){

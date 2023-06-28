@@ -7,8 +7,9 @@ int main() {
     
     readFile(&head);
     mergeNodes(head);
+    traverseList(head);
     writeFile(head);
-    destroyList(&head);
+    destoryList(&head); 
 
     return 0;
 }
